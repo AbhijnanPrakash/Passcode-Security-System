@@ -1,0 +1,24 @@
+
+This circuit illustrates the use of XOR (Exclusive-OR) gates as bit comparators. Four of these
+XOR gates compare the respective bits of two 4-bit binary numbers, each number “entered”
+into the circuit via a set of switches. If the two numbers match, bit for bit, the green “Go”
+LED will light up when the “Enter” pushbutton switch is pressed. If the two numbers do not
+exactly match, the red “No go” LED will light up when the “Enter” pushbutton is pressed.
+It is the nature of an XOR gate to output a “high” (1) signal if the input signals are not the
+same logic state. The four XOR gates’ output terminals are connected through a diode
+network which functions as a four-input OR gate: if any of the four XOR gates outputs a
+“high” signal—indicating that the entered code and the key code are not identical—then a
+“high” signal will be passed on to the NOR gate logic. If the two 4-bit codes are identical,
+then none of the XOR gate outputs will be “high,” and the pull-down resistor connected to
+the common sides of the diodes will provide a “low” signal state to the NOR logic.
+The NOR gate logic performs a simple task: prevent either of the LEDs from turning on if the
+“Enter” pushbutton is not pressed. Only when this pushbutton is pressed can either of the
+LEDs energize. If the Enter switch is pressed and the XOR outputs are all “low,” the “Go”
+LED will light up, indicating that the correct code has been entered. If the Enter switch is
+pressed and any of the XOR outputs are “high,” the “No go” LED will light up, indicating
+that an incorrect code has been entered.
+A buzzer and a mod-5 down counter with preset value 4 have been added to the circuit. When
+the count value reaches 5, the buzzer rings indicating that incorrect passcode has been entered
+multiple times. After buzzer rings the counter is reset. Counter also gets reset when the
+correct passcode is entered. When the passcode entered is correct, a motor connected to it
+through a 5v relay opens the door.
