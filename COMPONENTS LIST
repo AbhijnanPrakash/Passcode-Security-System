@@ -1,0 +1,40 @@
+
+4001 quad NOR gate 1
+
+4070 quad XOR gate 1
+
+light-emitting diodes 2
+
+4-position DIP switches 2
+
+1N914 “switching” diodes 4
+
+10 kΩ resistors 11
+
+470 Ω resistors 2
+
+Pushbutton switch (normally open) 1
+
+volt batteries 2
+
+74192 Counter 1
+
+CA 7 segment display 1
+
+CD5411 driver 1
+
+Relay 5v 1
+
+Buzzer 1
+
+2 micro farad Capacitor 1
+
+555 Timer 2
+
+Transistor (BC5427) 1
+
+IC Base 8
+
+PCB 1
+
+NOT Gate (IC7404) 1
